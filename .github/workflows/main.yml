@@ -33,6 +33,8 @@ jobs:
                   value: ${{ secrets.SLACK_BOT_TOKEN }}
                 - name: SLACK_SIGNING_SECRET
                   value: ${{ secrets.SLACK_SIGNING_SECRET }}
+                - name: SLACK_APP_TOKEN 
+                  value: ${{ secrets.SLACK_APP_TOKEN }}
                 - name: OPENAI_API_KEY
                   secret: openaiApiKey
               ports: 3000
